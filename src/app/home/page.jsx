@@ -194,7 +194,7 @@ const Home = () => {
               }}
             >
               <Image
-                src="/images/13.png"
+                src="/images/14.png"
                 alt="room"
                 layout="fill"
                 objectFit="cover"
@@ -258,7 +258,7 @@ const Home = () => {
           </p>
           <div className="absolute inset-0 flex justify-center items-end m-1">
             <Link legacyBehavior href="/">
-              <a className="bg-transparent border-2 text-white px-2 py-1 rounded-lg text-center bg-red-600">
+              <a className="bg-transparent border-2 text-white px-2 py-1 rounded-lg text-center bg-red-500">
                 <p>ABOUT US -&gt; </p>
               </a>
             </Link>
