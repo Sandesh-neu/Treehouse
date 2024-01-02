@@ -61,7 +61,7 @@ async def get_topics(request: Request, user: dict = Depends(get_current_user)):
             namespace=user,
         )
         
-        existing_topics = fetch_all_topics(topic_id=user)
+  
 
         # llm = OpenAI(temperature=0, openai_api_key=OPENAI_API_KEY)
         chain = get_topics_chain(vectorstore)
@@ -78,16 +78,7 @@ async def get_topics(request: Request, user: dict = Depends(get_current_user)):
         result = await chain.acall({"question": question, "chat_history": []})
         new_topics = json.loads(result["answer"])
     
-        if existing_topics:
-            for new_topic, topic_name in new_topics.items():
-                existing_topic_names = set(existing_topics.values())
 
-                if new_topic not in existing_topics and topic_name not in existing_topic_names:
-                    existing_topics[new_topic] = topic_name
-
-            return existing_topics
-        else:
-            return new_topics
     else:
         raise HTTPException(status_code=401, detail="Not Authenticated")
     
