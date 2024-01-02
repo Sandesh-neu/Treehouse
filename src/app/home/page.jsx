@@ -256,7 +256,7 @@ const Home = () => {
             Experience a unique harmony with nature at the Treehouse Resort—an
             elevated sanctuary for the soul.
           </p>
-          <div className="absolute inset-0 flex justify-center items-end m-1">
+          <div className="absolute inset-0 flex justify-center items-end m-2">
             <Link legacyBehavior href="/">
               <a className="bg-transparent border-2 text-white px-2 py-1 rounded-lg text-center bg-red-500">
                 <p>ABOUT US -&gt; </p>
