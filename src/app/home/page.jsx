@@ -243,7 +243,7 @@ const Home = () => {
           <h1 className="text-center text-black text-2 text-xl font-bold ">
             OUR STORY
           </h1>
-          <p className="p-4 text-black text-center">
+          <p className="p-4 text-black text-center text-wrap">
             Amidst verdant woods, the Treehouse Resort offers a serene escape.
             Embraced by nature&rsquo;s tranquility, these elevated abodes
             provide panoramic views and a deep connection with the surrounding
